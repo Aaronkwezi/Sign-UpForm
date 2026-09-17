@@ -6,23 +6,24 @@ body{
 }
 
 .logo-container {
-    display: flex;
-    flex-wrap: wrap;
+   
     width: 40%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-color: #f0f0f0;
-    flex-shrink: 0;
 }
 .logo-container img {
+    
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 .content-container {
     display: flex;
     flex-direction: column;
     width: 60%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-color: #ffffff;
     justify-content: center;
     align-items: center;
@@ -30,20 +31,32 @@ body{
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     margin: 0 ;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     margin-top: 50px;
+    width: 80%;
+}
+.form-section {
+   display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .form-field {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    flex:1;
 }
 .form-field label{
     margin-bottom: 5px;
@@ -51,8 +64,9 @@ form {
 }
 .form-field input {
     box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 198, 141);;
+    padding: 8px;
 }
 input[type="submit"] {
     width:100px;
