@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEZIS-SignUp</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Slabo+13px&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="logo-container">
@@ -12,7 +15,7 @@
     </div>
     <div class="content-container">
         <h1>Welcome to WEZIS SignUp Page</h1>
-        <form action="signup.php" method="POST">
+        <form action="#" method="POST">
             <h2>Personal Information</h2>
             <section class="form-section">
              <div class="form-row">  
@@ -30,7 +33,7 @@
         
               <div class="form-field">
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required placeholder="888-888-8888">
+                <input type="tel" id="phone" name="phone" required placeholder="888-888-8888" maxlength="10">
             </div>
 
 
@@ -42,14 +45,14 @@
         <div class="form-row">
            <div class="form-field">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" required minlength="8">
             </div>
 
            
 
             <div class="form-field">
                 <label for="confirm_password">Confirm Password:</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
+                <input type="password" id="confirm_password" name="confirm_password" required minlength="8">
             </div>
         </div>
             </section>

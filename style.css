@@ -1,8 +1,16 @@
 body{
+    font-family: "Quicksand", sans-serif;
     display: flex;
     margin: 0;
     flex-direction: row;
     gap: 20px;
+}
+h1, h2{
+    font-family: "Slabo 13px",serif;
+}
+h1{
+    color: rgb(255, 208, 150);
+    border-color: 1px solid black;
 }
 
 .logo-container {
@@ -83,4 +91,21 @@ input[type="submit"]:hover {
     background-color: #ffffff;
     color: rgb(248, 198, 141);
     border: 1px solid rgb(248, 198, 141);
+}
+input:focus{
+    outline: 2px solid rgba(0,0,225,0.2);
+}
+
+input[type="email"]:user-valid{
+    border-color: green;
+}
+input[type="email"]:user-invalid:not(:focus){
+    border-color: red;
+}
+input[type="password"]:user-valid{
+    border-color: green;
+}
+
+input[type="password"]:user-invalid:not(:focus){
+    border-color: red;
 }
